@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-10-20T19:45:50.744Z
+ * Last updated: 2025-10-20T19:47:49.557Z
  */
 
 // contactInfo configuration
@@ -457,7 +457,7 @@ export const heroVideo = {
   playsInline: true
 };
 
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -487,15 +487,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Toronto",
+  name: "Birchcliffe-Cliffside",
   city: "Toronto",
-  description: "Toronto's premier destination for culture, dining, and urban living.",
+  description: "Birchcliffe-Cliffside is an East Toronto lakeside neighbourhood known for family-friendly beaches, quiet residential streets and easy access to parks and local eateries. Residents enjoy a multicultural dining scene along Kingston Road and Danforth, plus nearby green spaces like Eastwood Park and scenic cliff-top views toward Lake Ontario.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Woodbine Beach — family favorite for sand, water sports, and a lakeside boardwalk",
+    "Eastwood Park — local green space with playgrounds, sports fields, and picnic amenities",
+    "Vibrant multicultural dining — easy access to authentic Greek, Indian and Caribbean flavours",
+    "Proximity to historic Eastwood Theater — local landmark in a walkable area",
+    "Quiet, family-friendly streets with quick routes to lakeside trails and parks"
   ]
 };
 
@@ -503,45 +503,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Tony & Claudia's on Fallingbrook (Italian grocery)",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Birchmount Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "Little Canada (interactive miniature attraction)",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "The Jalsa Indian Cuisine | Bar + Indian Kitchen",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Delina Restaurant",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Danforth Ave at Eastwood Ave (bus stop)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Scarborough Heights Park",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Toronto Transit Commission - Birchmount Garage",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -550,34 +564,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "74/100",
+    caption: "Very Walkable",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "69/100",
+    caption: "Good Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "Bike Score",
+    value: "68/100",
+    caption: "Good for Bikers",
+    iconName: "Bicycle",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
   }
 ];
 
@@ -597,7 +603,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "N/A",
     iconName: "GraduationCap"
   },
@@ -631,7 +637,12 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Monday, October 27, 2025","time":"2:00 PM - 4:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Monday, October 27, 2025",
+      time: "2:00 PM - 4:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -650,7 +661,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "N/A",
     iconName: "GraduationCap"
   },
@@ -694,7 +705,7 @@ export const property = {
   status: "For Sale",
   description: "Move in ready ",
   shortDescription: "3 BEDS + 3 BATHS in Toronto",
-longDescription: "Large backyard  Recently Renovated  Detached",
+  longDescription: "Large backyard  Recently Renovated  Detached",
   mainFeatures: [],
   propertyType: "Detached",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg",
@@ -714,7 +725,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -742,7 +753,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Tom provided exceptional service and found us exactly what we were looking for in Toronto.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -755,9 +766,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Tom knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
