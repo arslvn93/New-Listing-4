@@ -1,420 +1,763 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-09-05T06:30:10.202Z
+ * Last updated: 2025-10-20T19:45:50.744Z
  */
 
 // contactInfo configuration
 export const contactInfo = {
-    agent: {
-      name: "Arslan Ahmed",
-      photo: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757711141211-Headshot%20Arslan%20Andrew.jpg",
-      phone: "(416) 655-4850",
-      email: "arslan@salesgenius.co",
-      company: "Executive Homes Realty Inc",
-      license: "REALTOR®",
-      repo: "New-Listing-886",
-      companyAddress: "290 Traders Blvd E unit 1, Mississauaga, L4Z, 1W7, Canada",
-      companyLogo: "https://www.executivehomesrealty.ca/files/themeManager/9607/theme28/EHRB%20Transparent.png"
-    },
-    social: {
-      instagram: "https://instagram.com/executivehomesrealtyinc",
-      facebook: "https://facebook.com/executivehomesrealtyinc",
-      twitter: "https://twitter.com/executivehomesrealtyinc",
-      linkedin: "https://linkedin.com/company/executivehomesrealtyinc"
-    },
-    mapLocation: {
-      lat: 43.7,
-      lng: -79.4
-    },
-  };
+  agent: {
+    name: "Tom",
+    photo: "https://via.placeholder.com/150x150?text=Agent",
+    phone: "4166702432",
+    email: "tom@storeyteam.ca",
+    company: "Royal LePage Signature",
+    license: "RECO #84397152",
+    repo: "New-Listing-4"
+  },
+  social: {
+    instagram: "https://instagram.com/thestoreyteam",
+    facebook: "https://facebook.com/executivehomesrealtyinc",
+    twitter: "https://twitter.com/executivehomesrealtyinc",
+    linkedin: "https://linkedin.com/company/executivehomesrealtyinc"
+  }
+};
 
 // galleryImages configuration
 export const galleryImages = [
-    {
-      id: 1,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-      alt: "Open concept living room with floor-to-ceiling windows at 80 John St #2912",
-      category: "interior"
-    },
-    {
-      id: 2,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004602781-2912-80 John St-04.jpg",
-      alt: "Living and dining area with southeast light at 80 John St #2912",
-      category: "interior"
-    },
-    {
-      id: 3,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004609515-2912-80 John St-14.jpg",
-      alt: "Gourmet kitchen with enlarged island and built-in power at 80 John St #2912",
-      category: "kitchen"
-    },
-    {
-      id: 4,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004627198-2912-80 John St-20.jpg",
-      alt: "Primary bedroom with skyline outlook at 80 John St #2912",
-      category: "bedroom"
-    },
-    {
-      id: 5,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg",
-      alt: "Luxury bathroom with floor-to-ceiling tile and modern fixtures at 80 John St #2912",
-      category: "bathroom"
-    }
-  ];
+  {
+    id: 1,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg",
+    alt: "Property image 1",
+    category: "interior"
+  },
+  {
+    id: 2,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338033-151 Eastwood Avenue-2.jpg",
+    alt: "Property image 2",
+    category: "kitchen"
+  },
+  {
+    id: 3,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338200-151 Eastwood Avenue-3.jpg",
+    alt: "Property image 3",
+    category: "bedroom"
+  },
+  {
+    id: 4,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338335-151 Eastwood Avenue-4.jpg",
+    alt: "Property image 4",
+    category: "bathroom"
+  },
+  {
+    id: 5,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338495-151 Eastwood Avenue-5.jpg",
+    alt: "Property image 5",
+    category: "exterior"
+  },
+  {
+    id: 6,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338668-151 Eastwood Avenue-6.jpg",
+    alt: "Property image 6",
+    category: "interior"
+  },
+  {
+    id: 7,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338809-151 Eastwood Avenue-7.jpg",
+    alt: "Property image 7",
+    category: "kitchen"
+  },
+  {
+    id: 8,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338949-151 Eastwood Avenue-8.jpg",
+    alt: "Property image 8",
+    category: "bedroom"
+  },
+  {
+    id: 9,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339121-151 Eastwood Avenue-9.jpg",
+    alt: "Property image 9",
+    category: "bathroom"
+  },
+  {
+    id: 10,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339263-151 Eastwood Avenue-10.jpg",
+    alt: "Property image 10",
+    category: "exterior"
+  },
+  {
+    id: 11,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339444-151 Eastwood Avenue-11.jpg",
+    alt: "Property image 11",
+    category: "interior"
+  },
+  {
+    id: 12,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339555-151 Eastwood Avenue-12.jpg",
+    alt: "Property image 12",
+    category: "kitchen"
+  },
+  {
+    id: 13,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339682-151 Eastwood Avenue-13.jpg",
+    alt: "Property image 13",
+    category: "bedroom"
+  },
+  {
+    id: 14,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989339845-151 Eastwood Avenue-14.jpg",
+    alt: "Property image 14",
+    category: "bathroom"
+  },
+  {
+    id: 15,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340014-151 Eastwood Avenue-15.jpg",
+    alt: "Property image 15",
+    category: "exterior"
+  },
+  {
+    id: 16,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340155-151 Eastwood Avenue-16.jpg",
+    alt: "Property image 16",
+    category: "interior"
+  },
+  {
+    id: 17,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340319-151 Eastwood Avenue-17.jpg",
+    alt: "Property image 17",
+    category: "kitchen"
+  },
+  {
+    id: 18,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340506-151 Eastwood Avenue-18.jpg",
+    alt: "Property image 18",
+    category: "bedroom"
+  },
+  {
+    id: 19,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340676-151 Eastwood Avenue-19.jpg",
+    alt: "Property image 19",
+    category: "bathroom"
+  },
+  {
+    id: 20,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989340858-151 Eastwood Avenue-20.jpg",
+    alt: "Property image 20",
+    category: "exterior"
+  },
+  {
+    id: 21,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341035-151 Eastwood Avenue-21.jpg",
+    alt: "Property image 21",
+    category: "interior"
+  },
+  {
+    id: 22,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341201-151 Eastwood Avenue-22.jpg",
+    alt: "Property image 22",
+    category: "kitchen"
+  },
+  {
+    id: 23,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341408-151 Eastwood Avenue-23.jpg",
+    alt: "Property image 23",
+    category: "bedroom"
+  },
+  {
+    id: 24,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341590-151 Eastwood Avenue-24.jpg",
+    alt: "Property image 24",
+    category: "bathroom"
+  },
+  {
+    id: 25,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341718-151 Eastwood Avenue-25.jpg",
+    alt: "Property image 25",
+    category: "exterior"
+  },
+  {
+    id: 26,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989341887-151 Eastwood Avenue-26.jpg",
+    alt: "Property image 26",
+    category: "interior"
+  },
+  {
+    id: 27,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342024-151 Eastwood Avenue-27.jpg",
+    alt: "Property image 27",
+    category: "kitchen"
+  },
+  {
+    id: 28,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342134-151 Eastwood Avenue-28.jpg",
+    alt: "Property image 28",
+    category: "bedroom"
+  },
+  {
+    id: 29,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342279-151 Eastwood Avenue-29.jpg",
+    alt: "Property image 29",
+    category: "bathroom"
+  },
+  {
+    id: 30,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342444-151 Eastwood Avenue-30.jpg",
+    alt: "Property image 30",
+    category: "exterior"
+  },
+  {
+    id: 31,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342612-151 Eastwood Avenue-31.jpg",
+    alt: "Property image 31",
+    category: "interior"
+  },
+  {
+    id: 32,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989342801-151 Eastwood Avenue-32.jpg",
+    alt: "Property image 32",
+    category: "kitchen"
+  },
+  {
+    id: 33,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343013-151 Eastwood Avenue-33.jpg",
+    alt: "Property image 33",
+    category: "bedroom"
+  },
+  {
+    id: 34,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343212-151 Eastwood Avenue-34.jpg",
+    alt: "Property image 34",
+    category: "bathroom"
+  },
+  {
+    id: 35,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343385-151 Eastwood Avenue-35.jpg",
+    alt: "Property image 35",
+    category: "exterior"
+  },
+  {
+    id: 36,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343544-151 Eastwood Avenue-36.jpg",
+    alt: "Property image 36",
+    category: "interior"
+  },
+  {
+    id: 37,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343717-151 Eastwood Avenue-37.jpg",
+    alt: "Property image 37",
+    category: "kitchen"
+  },
+  {
+    id: 38,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989343881-151 Eastwood Avenue-38.jpg",
+    alt: "Property image 38",
+    category: "bedroom"
+  },
+  {
+    id: 39,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344033-151 Eastwood Avenue-39.jpg",
+    alt: "Property image 39",
+    category: "bathroom"
+  },
+  {
+    id: 40,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344200-151 Eastwood Avenue-40.jpg",
+    alt: "Property image 40",
+    category: "exterior"
+  },
+  {
+    id: 41,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344396-151 Eastwood Avenue-41.jpg",
+    alt: "Property image 41",
+    category: "interior"
+  },
+  {
+    id: 42,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344623-151 Eastwood Avenue-42.jpg",
+    alt: "Property image 42",
+    category: "kitchen"
+  },
+  {
+    id: 43,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344785-151 Eastwood Avenue-43.jpg",
+    alt: "Property image 43",
+    category: "bedroom"
+  },
+  {
+    id: 44,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989344940-151 Eastwood Avenue-44.jpg",
+    alt: "Property image 44",
+    category: "bathroom"
+  },
+  {
+    id: 45,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345088-151 Eastwood Avenue-45.jpg",
+    alt: "Property image 45",
+    category: "exterior"
+  },
+  {
+    id: 46,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345257-151 Eastwood Avenue-46.jpg",
+    alt: "Property image 46",
+    category: "interior"
+  },
+  {
+    id: 47,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345476-151 Eastwood Avenue-47.jpg",
+    alt: "Property image 47",
+    category: "kitchen"
+  },
+  {
+    id: 48,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345607-151 Eastwood Avenue-48.jpg",
+    alt: "Property image 48",
+    category: "bedroom"
+  },
+  {
+    id: 49,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345751-151 Eastwood Avenue-49.jpg",
+    alt: "Property image 49",
+    category: "bathroom"
+  },
+  {
+    id: 50,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989345895-151 Eastwood Avenue-50.jpg",
+    alt: "Property image 50",
+    category: "exterior"
+  },
+  {
+    id: 51,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346046-151 Eastwood Avenue-51.jpg",
+    alt: "Property image 51",
+    category: "interior"
+  },
+  {
+    id: 52,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346191-151 Eastwood Avenue-52.jpg",
+    alt: "Property image 52",
+    category: "kitchen"
+  },
+  {
+    id: 53,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346325-151 Eastwood Avenue-53.jpg",
+    alt: "Property image 53",
+    category: "bedroom"
+  },
+  {
+    id: 54,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346500-151 Eastwood Avenue-54.jpg",
+    alt: "Property image 54",
+    category: "bathroom"
+  },
+  {
+    id: 55,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346670-151 Eastwood Avenue-55.jpg",
+    alt: "Property image 55",
+    category: "exterior"
+  },
+  {
+    id: 56,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346800-151 Eastwood Avenue-56.jpg",
+    alt: "Property image 56",
+    category: "interior"
+  },
+  {
+    id: 57,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989346927-151 Eastwood Avenue-57.jpg",
+    alt: "Property image 57",
+    category: "kitchen"
+  },
+  {
+    id: 58,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347084-151 Eastwood Avenue-58.jpg",
+    alt: "Property image 58",
+    category: "bedroom"
+  },
+  {
+    id: 59,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347250-151 Eastwood Avenue-59.jpg",
+    alt: "Property image 59",
+    category: "bathroom"
+  },
+  {
+    id: 60,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347451-151 Eastwood Avenue-60.jpg",
+    alt: "Property image 60",
+    category: "exterior"
+  },
+  {
+    id: 61,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347621-151 Eastwood Avenue-61.jpg",
+    alt: "Property image 61",
+    category: "interior"
+  },
+  {
+    id: 62,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347796-151 Eastwood Avenue-62.jpg",
+    alt: "Property image 62",
+    category: "kitchen"
+  },
+  {
+    id: 63,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989347929-151 Eastwood Avenue-63.jpg",
+    alt: "Property image 63",
+    category: "bedroom"
+  },
+  {
+    id: 64,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989348087-151 Eastwood Avenue-64.jpg",
+    alt: "Property image 64",
+    category: "bathroom"
+  },
+  {
+    id: 65,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989348462-151 Eastwood Avenue-65.jpg",
+    alt: "Property image 65",
+    category: "exterior"
+  },
+  {
+    id: 66,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989348650-151 Eastwood Avenue-66.jpg",
+    alt: "Property image 66",
+    category: "interior"
+  },
+  {
+    id: 67,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989348804-151 Eastwood Avenue-67.jpg",
+    alt: "Property image 67",
+    category: "kitchen"
+  },
+  {
+    id: 68,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989348990-151 Eastwood Avenue-68.jpg",
+    alt: "Property image 68",
+    category: "bedroom"
+  },
+  {
+    id: 69,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989349119-151 Eastwood Avenue-69.jpg",
+    alt: "Property image 69",
+    category: "bathroom"
+  },
+  {
+    id: 70,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989349275-151 Eastwood Avenue-70.jpg",
+    alt: "Property image 70",
+    category: "exterior"
+  }
+];
 
 // heroVideo configuration
 export const heroVideo = {
-    url: "https://www.yudiz.com/codepen/studio-r/bg-video.mp4",
-    type: "video/mp4",
-    autoplay: true,
-    loop: true,
-    muted: true,
-    playsInline: true
-  };
+  url: "https://www.instagram.com/p/DP38ovZjjy9/",
+  type: "video/mp4",
+  autoplay: true,
+  loop: true,
+  muted: true,
+  playsInline: true
+};
 
-// homeShowcaseSections configuration
+// homeShowcaseSections configuration  
 export const homeShowcaseSections = [
-    {
-      id: "section1",
-      title: "Glass-Framed Living",
-      description: "An airy open-concept living and dining space wrapped in true floor-to-ceiling windows delivers dramatic light, clean sightlines, and effortless flow for everyday comfort and entertaining.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg"
-    },
-    {
-      id: "section2",
-      title: "Culinary Haven",
-      description: "Custom 2021 kitchen with enlarged island, storage on the seating side, and built-in outlet—perfect for prep, laptops, and hosting—finished with cohesive designer materials and fixtures.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004602781-2912-80 John St-04.jpg",
-      tags: "Custom Kitchen, Island Seating, Modern Fixtures"
-    },
-    {
-      id: "section3",
-      title: "Primary Retreat",
-      description: "Quiet, well-proportioned bedroom offers serene rest with bright southeast light and easy access to a beautifully retiled bathroom featuring modern fixtures and floor-to-ceiling tile.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004609515-2912-80 John St-14.jpg",
-      tags: "Serene Bedroom, Natural Light, Modern Bathroom"
-    },
-    {
-      id: "section4",
-      title: "Productive Workspace",
-      description: "A true den separates work from life—ideal for focused WFH, a guest nook, or reading lounge—without compromising the openness of the main living area.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg",
-      tags: "Home Office, Flexible Space, Private Den"
-    }
-  ];
+  {
+    id: "section1",
+    title: "3 Bedrooms",
+    description: "Bright and open ",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg"
+  },
+  {
+    id: "section2",
+    title: "2.5 Bathrooms",
+    description: "",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338033-151 Eastwood Avenue-2.jpg"
+  },
+  {
+    id: "section3",
+    title: "1400 SqFt",
+    description: "Spacious living area with ample room for your lifestyle",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338200-151 Eastwood Avenue-3.jpg"
+  },
+  {
+    id: "section4",
+    title: "$$1,265,000",
+    description: "",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989338335-151 Eastwood Avenue-4.jpg"
+  }
+];
 
 // neighborhood configuration
 export const neighborhood = {
-    name: "Entertainment District",
-    city: "Toronto",
-    description: "Toronto's Entertainment District is the city's premier destination for culture, dining, and urban living, known for its vibrant atmosphere and world-class amenities.",
-    highlights: [
-      "Steps to theaters, dining, and entertainment venues",
-      "Direct access to PATH underground walkway",
-      "TTC subway and streetcar connections",
-      "Walk to financial district and shopping",
-      "Vibrant urban lifestyle with 95/100 walk score"
-    ]
-  };
+  name: "Toronto",
+  city: "Toronto",
+  description: "Toronto's premier destination for culture, dining, and urban living.",
+  highlights: [
+    "Steps to theaters, dining, and entertainment venues",
+    "Direct access to PATH underground walkway", 
+    "TTC subway and streetcar connections",
+    "Walk to financial district and shopping",
+    "Vibrant urban lifestyle with excellent walk score"
+  ]
+};
 
 // neighborhoodAmenities configuration
 export const neighborhoodAmenities = [
-    {
-      id: 1,
-      name: "Rabba Fine Foods King West",
-      distance: "0.2 miles",
-      category: "shopping",
-      iconName: "ShoppingBag"
-    },
-    {
-      id: 2,
-      name: "David Pecaut Square",
-      distance: "0.1 miles",
-      category: "recreation",
-      iconName: "Leaf"
-    },
-    {
-      id: 3,
-      name: "Ogden Junior Public School (TDSB)",
-      distance: "0.6 miles",
-      category: "education",
-      iconName: "School"
-    },
-    {
-      id: 4,
-      name: "Byblos Toronto",
-      distance: "0.2 miles",
-      category: "dining",
-      iconName: "Wine"
-    },
-    {
-      id: 5,
-      name: "Momofuku Noodle Bar",
-      distance: "0.4 miles",
-      category: "dining",
-      iconName: "Utensils"
-    },
-    {
-      id: 6,
-      name: "St Andrew Station (Line 1)",
-      distance: "0.4 miles",
-      category: "transportation",
-      iconName: "Train"
-    },
-    {
-      id: 7,
-      name: "The Adelaide Club",
-      distance: "0.5 miles",
-      category: "recreation",
-      iconName: "Users"
-    },
-    {
-      id: 8,
-      name: "PATH Financial District",
-      distance: "0.4 miles",
-      category: "business",
-      iconName: "Building"
-    }
-  ];
+  {
+    id: 1,
+    name: "Local Grocery Store",
+    distance: "0.2 miles",
+    category: "shopping",
+    iconName: "ShoppingBag"
+  },
+  {
+    id: 2,
+    name: "Nearby Park",
+    distance: "0.1 miles", 
+    category: "recreation",
+    iconName: "Leaf"
+  },
+  {
+    id: 3,
+    name: "Public School",
+    distance: "0.6 miles",
+    category: "education", 
+    iconName: "School"
+  },
+  {
+    id: 4,
+    name: "Fine Dining",
+    distance: "0.2 miles",
+    category: "dining",
+    iconName: "Wine"
+  },
+  {
+    id: 5,
+    name: "Casual Dining",
+    distance: "0.4 miles",
+    category: "dining",
+    iconName: "Utensils"
+  },
+  {
+    id: 6,
+    name: "Transit Station",
+    distance: "0.4 miles",
+    category: "transportation",
+    iconName: "Train"
+  }
+];
 
 // neighborhoodStats configuration
 export const neighborhoodStats = [
-    {
-      id: 1,
-      title: "Walk Score",
-      value: "95/100",
-      caption: "Walker's Paradise",
-      iconName: "BadgeCheck",
-      color: "bg-green-500"
-    },
-    {
-      id: 2,
-      title: "Transit Score",
-      value: "94/100",
-      caption: "Excellent Transit",
-      iconName: "Compass",
-      color: "bg-blue-500"
-    },
-    {
-      id: 3,
-      title: "School Rating",
-      value: "8/10",
-      caption: "Great Schools",
-      iconName: "School",
-      color: "bg-indigo-500"
-    },
-    {
-      id: 4,
-      title: "Commute Time",
-      value: "8 min",
-      caption: "To Financial District",
-      iconName: "Clock",
-      color: "bg-amber-500"
-    }
-  ];
+  {
+    id: 1,
+    title: "Walk Score",
+    value: "95/100",
+    caption: "Walker's Paradise",
+    iconName: "BadgeCheck",
+    color: "bg-green-500"
+  },
+  {
+    id: 2,
+    title: "Transit Score", 
+    value: "94/100",
+    caption: "Excellent Transit",
+    iconName: "Compass",
+    color: "bg-blue-500"
+  },
+  {
+    id: 3,
+    title: "School Rating",
+    value: "8/10", 
+    caption: "Great Schools",
+    iconName: "School",
+    color: "bg-indigo-500"
+  },
+  {
+    id: 4,
+    title: "Commute Time",
+    value: "8 min",
+    caption: "To Financial District",
+    iconName: "Clock", 
+    color: "bg-amber-500"
+  }
+];
 
 // openHouseBenefits configuration
 export const openHouseBenefits = [
-    {
-      id: 1,
-      title: "Detailed Floor Plans",
-      description: "Complete architectural layouts showing the 2 bedroom, 2 bathroom + den configuration with precise measurements and optimal room flow.",
-      iconName: "FileText"
-    },
-    {
-      id: 2,
-      title: "Recent Neighborhood Sales",
-      description: "Comparative market analysis of recent Condo Apartment sales in the Entertainment District, showing strong demand for larger, renovated suites.",
-      iconName: "BarChart2"
-    },
-    {
-      id: 3,
-      title: "School District Information",
-      description: "Comprehensive overview of TDSB and TCDSB options nearby, including Ogden Junior Public School and local secondary programs with ratings and enrollment details.",
-      iconName: "GraduationCap"
-    },
-    {
-      id: 4,
-      title: "Property Inspection Report",
-      description: "Professional assessment of the unit's condition, highlighting recent upgrades and maintenance history for informed decision-making.",
-      iconName: "CheckSquare"
-    },
-    {
-      id: 5,
-      title: "Financing Options Guide",
-      description: "Current mortgage rates and financing programs available for condo purchases, including first-time buyer incentives and down payment assistance.",
-      iconName: "DollarSign"
-    },
-    {
-      id: 6,
-      title: "Neighborhood Amenities Map",
-      description: "Interactive guide to nearby restaurants, shopping, entertainment venues, and transportation options within walking distance.",
-      iconName: "Map"
-    }
-  ];
+  {
+    id: 1,
+    title: "Detailed Floor Plans",
+    description: "Complete architectural layouts showing the 3 bedroom, 2.5 bathroom configuration with precise measurements.",
+    iconName: "FileText"
+  },
+  {
+    id: 2,
+    title: "Recent Neighborhood Sales",
+    description: "Comparative market analysis of recent Detached sales in Toronto.",
+    iconName: "BarChart2"
+  },
+  {
+    id: 3,
+    title: "School District Information", 
+    description: "N/A",
+    iconName: "GraduationCap"
+  },
+  {
+    id: 4,
+    title: "Property Inspection Report",
+    description: "Professional assessment highlighting recent upgrades and maintenance history.",
+    iconName: "CheckSquare"
+  },
+  {
+    id: 5,
+    title: "Financing Options Guide",
+    description: "Current mortgage rates and financing programs available for this price range.",
+    iconName: "DollarSign"
+  },
+  {
+    id: 6,
+    title: "Neighborhood Amenities Map",
+    description: "Interactive guide to nearby amenities and transportation options.",
+    iconName: "Map"
+  }
+];
 
 // openHouseDetails configuration
 export const openHouseDetails = {
-    nextDate: "Saturday, September 6, 2025",
-    time: "1:00 PM - 4:00 PM",
-    host: "Arslan Ahmed",
-    phone: "(416) 655-4850",
-    email: "info@80john.com",
-    ctaText: "RSVP for Open House",
-    virtualTourAvailable: true,
-    virtualTourUrl: "https://tours.openhousemedia.ca/sites/80-john-st-2912-toronto-on-m5v-3x4-15850296/branded"
-  };
+  nextDate: "Monday, October 27, 2025",
+  time: "2:00 PM - 4:00 PM",
+  host: "Tom",
+  phone: "4166702432",
+  email: "tom@storeyteam.ca",
+  ctaText: "RSVP for Open House",
+  virtualTourAvailable: false,
+  virtualTourUrl: "",
+  allOpenHouses: [{"date":"Monday, October 27, 2025","time":"2:00 PM - 4:00 PM"}]
+};
 
 // packageItems configuration
 export const packageItems = [
-    {
-      id: 1,
-      title: "Detailed Floor Plans",
-      description: "Complete architectural layouts showing the 2 bedroom, 2 bathroom + den configuration with precise measurements and optimal room flow.",
-      iconName: "FileText"
-    },
-    {
-      id: 2,
-      title: "Recent Neighborhood Sales",
-      description: "Comparative market analysis of recent Condo Apartment sales in the Entertainment District, showing strong demand for larger, renovated suites.",
-      iconName: "BarChart2"
-    },
-    {
-      id: 3,
-      title: "School District Information",
-      description: "Comprehensive overview of TDSB and TCDSB options nearby, including Ogden Junior Public School and local secondary programs with ratings and enrollment details.",
-      iconName: "GraduationCap"
-    },
-    {
-      id: 4,
-      title: "Property Feature List",
-      description: "Detailed inventory highlighting true floor-to-ceiling windows without bulkheads, cohesive $90K 2021 kitchen and bath renovation, and enlarged island with seating-side storage and built-in outlet.",
-      iconName: "CheckSquare"
-    },
-    {
-      id: 5,
-      title: "Utility Cost Estimates",
-      description: "Estimated monthly utility expenses averaging $180 based on 1,249 sq ft, LED lighting, and efficient in-suite HVAC with programmable thermostat.",
-      iconName: "DollarSign"
-    },
-    {
-      id: 6,
-      title: "Local Amenities Guide",
-      description: "Curated directory of shopping, dining, recreation, and entertainment within walking distance of 80 John St #2912, including insider recommendations.",
-      iconName: "Map"
-    },
-    {
-      id: 7,
-      title: "Home Inspection Tips",
-      description: "Professional guidance focusing on the 2021 custom kitchen and fully retiled bathrooms, plus key mechanical and building systems to evaluate in a condo tower.",
-      iconName: "Search"
-    },
-    {
-      id: 8,
-      title: "Financing Resources",
-      description: "Mortgage pre-approval resources, down payment strategies, and competitive financing options for the $1,495,000 purchase price range.",
-      iconName: "CreditCard"
-    }
-  ];
+  {
+    id: 1,
+    title: "Detailed Floor Plans",
+    description: "Complete architectural layouts showing the 3 bedroom, 2.5 bathroom configuration with precise measurements.",
+    iconName: "FileText"
+  },
+  {
+    id: 2,
+    title: "Recent Neighborhood Sales",
+    description: "Comparative market analysis of recent Detached sales in Toronto.",
+    iconName: "BarChart2"
+  },
+  {
+    id: 3,
+    title: "School District Information", 
+    description: "N/A",
+    iconName: "GraduationCap"
+  },
+  {
+    id: 4,
+    title: "Property Inspection Report",
+    description: "Professional assessment highlighting recent upgrades and maintenance history.",
+    iconName: "CheckSquare"
+  },
+  {
+    id: 5,
+    title: "Financing Options Guide",
+    description: "Current mortgage rates and financing programs available for this price range.",
+    iconName: "DollarSign"
+  },
+  {
+    id: 6,
+    title: "Neighborhood Amenities Map",
+    description: "Interactive guide to nearby amenities and transportation options.",
+    iconName: "Map"
+  }
+];
 
 // property configuration
 export const property = {
-    name: "80 John St",
-    address: {
-      street: "88 John St #2912",
-      city: "Toronto",
-      state: "ON",
-      zip: "M5V 3X4",
-      country: "Canada"
-    },
-    price: "$1,495,000",
-    beds: 2,
-    baths: 2,
-    sqft: 1249,
-    lotSize: "30 x 120 ft",
-    yearBuilt: 2010,
-    type: "Condo Apartment",
-    status: "For Sale",
-    description: "Sophisticated condo apartment offering turnkey urban luxury, dramatic floor-to-ceiling glazing without bulkheads, cohesive 2021 renovations, and walk-to-everything convenience in Toronto's Entertainment District.",
-    shortDescription: "Turnkey luxury condo in Toronto’s Entertainment District with parking",
-    longDescription: "Elevated downtown living in a rare Loren-style 2+Den, 2-bath suite (1,249 sf) with true floor-to-ceiling windows—no bulkheads—delivering uninterrupted light and views. A cohesive $90K 2021 renovation reimagines the kitchen and bathrooms with designer finishes, an enlarged island with power, and consistent materiality. Enjoy southeast exposure, a usable 143 sf balcony, parking, and an owned locker. Steps to theatres, dining, PATH, TTC, and the financial core.",
-    mainFeatures: [],
-    propertyType: "Condo Apartment",
-    heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    heroCaption: "Turnkey luxury condo in Toronto’s Entertainment District with parking"
-  };
+  name: "151 Eastwood Avenue",
+  address: {
+    street: "151 Eastwood Avenue",
+    city: "Toronto",
+    state: "Ontario",
+    zip: "M1N 3H5",
+    country: "Canada"
+  },
+  price: "$1,265,000",
+  beds: 3,
+  baths: 2.5,
+  sqft: 1400,
+  lotSize: "30 x 120 ft",
+  yearBuilt: 2010,
+  type: "Detached",
+  status: "For Sale",
+  description: "Move in ready ",
+  shortDescription: "3 BEDS + 3 BATHS in Toronto",
+longDescription: "Large backyard  Recently Renovated  Detached",
+  mainFeatures: [],
+  propertyType: "Detached",
+  heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg",
+  heroCaption: "Large Backyard + Recently Renovated + 3-Car Parking = Your Perfect Family Home Just Listed!"
+};
 
 // propertyFeatures configuration
 export const propertyFeatures = [
-    "Custom-designed kitchen with enlarged island, seating-side cabinet storage, and integrated power outlet for seamless cooking, work, and entertaining",
-    "Open-concept living and dining framed by true floor-to-ceiling glazing for maximum light, bigger views, and dramatic first impressions",
-    "Primary bedroom with generous proportions and bright southeast outlook for calm, comfortable rest",
-    "Designer-renovated bathrooms fully retiled floor-to-ceiling with new vanities, fixtures, and toilets for a luxe, cohesive look",
-    "Functional den offering a quiet, dedicated workspace or guest nook without compromising main living areas",
-    "Energy-efficient double-pane curtain-wall glazing and predominantly LED lighting for comfort and lower operating costs",
-    "Individually controlled in-suite HVAC with programmable thermostat for year-round climate control",
-    "Rare no-bulkhead design in principal rooms delivering uninterrupted glass and skyline wow factor",
-    "Consistent, designer-level finish across kitchen and baths elevating the entire home’s feel",
-    "143 sq ft balcony sized for real outdoor living—dining, lounging, and entertaining",
-    "Parking and owned locker provide turnkey downtown convenience and storage",
-    "Pre-wired for high-speed internet and smart-home ready for easy thermostat, lock, and lighting upgrades",
-    "Southeast exposure balances natural light and privacy without harsh late-afternoon glare",
-    "Cohesive 2021 renovation investment (~$90K) minimizing future maintenance and upgrade needs"
-  ];
+  "Size of the backyard",
+  "3 car parking pad"
+];
 
 // siteBranding configuration
 export const siteBranding = {
-    logoUrl: "/logo.svg",
-    logoAlt: "80 John St",
-    favicon: "/favicon.ico",
-    colors: {
-      primary: "#D9A566",
-      primaryDark: "#8B6839",
-      primaryLight: "#E6C38C",
-      dark: "#111111",
-      light: "#FFFFFF"
-    },
-    heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    footer: {
-      copyrightText: "© 2024 80 John St. All rights reserved.",
-      disclaimer: "This website is for informational purposes only. Details are subject to change."
-    }
-  };
+  logoUrl: "/logo.svg",
+  logoAlt: "151 Eastwood Avenue",
+  favicon: "/favicon.ico",
+  colors: {
+    primary: "#D9A566",
+    primaryDark: "#8B6839", 
+    primaryLight: "#E6C38C",
+    dark: "#111111",
+    light: "#FFFFFF"
+  },
+  heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg",
+  footer: {
+    copyrightText: "© 2024 151 Eastwood Avenue. All rights reserved.",
+    disclaimer: "This website is for informational purposes only. Details are subject to change."
+  }
+};
 
 // siteMetadata configuration
 export const siteMetadata = {
-    title: "80 John St #2912 | Turnkey Luxury Condo | Downtown Toronto",
-    description: "Turnkey 2+Den condo with no-bulkhead floor-to-ceiling windows, $90K 2021 renovation, 143 sf balcony, and parking in the Entertainment District. Book a tour.",
-    keywords: "condo apartment, Toronto real estate, Entertainment District, luxury condo, floor-to-ceiling windows, 2 bed plus den, parking included, virtual tour, $1,495,000",
-    ogImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    ogType: "website",
-    twitterCard: "summary_large_image",
-    canonical: "https://80john.com"
-  };
+  title: "151 Eastwood Avenue | Detached | Toronto",
+  description: "Large Backyard + Recently Renovated + 3-Car Parking = Your Perfect Family Home Just Listed!",
+  keywords: "detached, Toronto real estate, 3 bedroom, 2.5 bathroom, $1,265,000",
+  ogImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760989337789-151 Eastwood Avenue-1.jpg",
+  ogType: "website",
+  twitterCard: "summary_large_image",
+  canonical: "https://151eastwoodavenue.com"
+};
 
 // testimonials configuration
 export const testimonials = [
-    {
-      id: 1,
-      name: "David Chen",
-      role: "Recent Homebuyer",
-      content: "Arslan Ahmed guided us to a suite that feels bigger than the square footage. The true floor-to-ceiling windows and cohesive renovation were exactly what we wanted—plus parking in the heart of the city.",
-      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
-    },
-    {
-      id: 2,
-      name: "Jennifer Liu",
-      role: "Interior Designer",
-      content: "The rare no-bulkhead glazing and consistent materials across the kitchen and baths show thoughtful design. The enlarged island with built-in power is both elegant and incredibly functional. Arslan presented every detail clearly.",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
-    },
-    {
-      id: 3,
-      name: "Mark Williams",
-      role: "Neighborhood Resident",
-      content: "Living in the Entertainment District, you appreciate walkability to theatres, TTC, and PATH. Suites like this, with real outdoor space and parking, are special. Arslan knows how to highlight what matters here.",
-      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
-    }
-  ];
-
+  {
+    id: 1,
+    name: "David Chen",
+    role: "Recent Homebuyer", 
+    content: "Tom provided exceptional service and found us exactly what we were looking for in Toronto.",
+    avatar: "https://randomuser.me/api/portraits/men/22.jpg"
+  },
+  {
+    id: 2,
+    name: "Jennifer Liu",
+    role: "Interior Designer",
+    content: "The attention to detail and quality of finishes in this property is outstanding. Tom presented every detail clearly.",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    id: 3,
+    name: "Mark Williams", 
+    role: "Neighborhood Resident",
+    content: "Living in this area, you appreciate the convenience and lifestyle. Tom knows the market incredibly well.",
+    avatar: "https://randomuser.me/api/portraits/men/35.jpg"
+  }
+];
